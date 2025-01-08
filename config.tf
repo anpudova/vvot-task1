@@ -9,7 +9,7 @@ terraform {
 
 variable "folder_id" {
   type = string
-  description = "ID каталога Yandex Cloud, где будет размещена инфраструктура"
+  description = "ID каталога Yandex Cloud"
 }
 
 variable "cloud_id" {
@@ -22,13 +22,13 @@ variable "zone" {
 }
 
 variable "telegram_bot_token" {
-  description = "The token for your Telegram bot"
-  type        = string
+  type = string
+  description = "Токен Telegram-бота"
 }
 
 variable "webhook_url" {
-  description = "The URL for the webhook"
-  type        = string
+  type = string
+  description = "URL webhook"
 }
 
 provider "yandex" {
